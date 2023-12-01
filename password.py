@@ -3,10 +3,12 @@ from random import randint
 
 root = Tk()
 root.title('Ayush.com - Strong Password Generator')
-#root.iconbitmap('C:/Users/ksplr/Downloads/kon.ico')
+root.iconbitmap('E:\my games and Etc\FALKEN GAMING\BACKROUND\logos_pics\F (2).ico')
 root.geometry("500x300")
 
-my_password = chr(randint(33,126))
+
+
+#my_password = chr(randint(33,126))
 
 def new_rand():
     pw_entry.delete(0, END)
@@ -36,9 +38,15 @@ def clipper():
 lf = LabelFrame(root, text="How Many Characters?")
 lf.pack(pady=20)
 
+# af = LabelFrame(root, text="Enter Special Feature Want to include")
+# af.pack(pady=20)
+
+
 
 my_entry = Entry(lf, font=("Helvetica", 24)) 
 my_entry.pack(pady=20,  padx=20)
+
+
 
 
 pw_entry = Entry(root, text='', font=("Helvetica", 24), bd=0, bg="systembuttonface")
